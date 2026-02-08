@@ -13,7 +13,7 @@ function updateCards() {
     setText(".card-email", email);
     setText(".card-company", company);
 
-    // 👉 GITHUB
+    // GITHUB
     document.querySelectorAll(".card-github").forEach(link => {
         if (github.trim() !== "") {
             const url = github.startsWith("http")
