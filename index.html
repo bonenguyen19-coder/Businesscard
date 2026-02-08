@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Serif+SC:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+<script src="script.js"></script>
+
+<body>
+    <section>
+        <h1>Business Card Generator</h1>
+        <p>This is a tool helping you create professional cards</p>
+        <!-- <input type="text" placeholder="Name">
+        <input type="text" placeholder="Title">
+        <input type="text" placeholder="Email">
+        <input type="number" placeholder="Phone Number">
+        <input type="text" placeholder="Company">
+        <button onclick="createCard()">Create Card</button> -->
+        <div class="controls">
+            <input id="input-name" placeholder="Name">
+            <input id="input-title" placeholder="Title">
+            <input id="input-phone" placeholder="Phone">
+            <input id="input-email" placeholder="Email">
+            <input id="input-company" placeholder="Company">
+            <input id="input-github" placeholder="github.com/username">
+            <!-- <input id="input-logo" placeholder="Logo URL"> -->
+            <button onclick="updateCards()">UPDATE</button>
+        </div>
+    </section>
+    <!-- <div class="flex-container">
+        <div class="card">card1</div>
+        <div class="card">card2</div>
+        <div class="card">card3</div>
+        <div class="card">card4</div>
+        <div class="card">card5</div>
+        <div class="card">card6</div>
+    </div> -->
+    <div class="flex-container">
+        <!-- CARD 1 -->
+        <div class="card-wrapper">
+            <div class="style-heading">Classic Corporate</div>
+            <div class="card classic">
+                <div class="left">
+                    <img class="card-logo" src="apple-logo-vector-icon-color-editorial-298504060.webp" alt="Logo">
+                </div>
+                <div class="divider"></div>
+                <div class="right">
+                    <div class="card-name"></div>
+                    <div class="card-title"></div>
+                    <div class="line"></div>
+                    <div class="card-phone"></div>
+                    <div class="card-email"></div>
+                    <a class="card-website" href="https://google.com" target="_blank">thisisforfun.com</a>
+                </div>
+            </div>
+        </div>
+        <!-- CARD 2 -->
+        <div class="card-wrapper">
+            <div class="style-heading">Creative Gradient</div>
+            <div class="card gradient">
+                <div class="top">
+                    <div class="portrait">
+                        <img src="image.png">
+                    </div>
+                    <div class="info">
+                        <div class="card-name"></div>
+                        <div class="card-title"></div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="card-phone"></div>
+                    <div class="card-email"></div>
+                </div>
+            </div>
+        </div>
+        <!-- CARD 3 -->
+        <div class="card-wrapper">
+            <div class="style-heading">Coder Style</div>
+            <div class="card dev">
+                <div class="card-name"></div>
+                <div class="card-title"></div>
+                <div class="divider"></div>
+                <p> HTML | CSS | JS</p>
+                <a class="card-github" target="_blank">
+                    <span class="prompt">&gt;</span>
+                    <span class="github-text"></span>
+                </a>
+                <div class="card-email"></div>
+            </div>
+        </div>
+        <!-- CARD 4 -->
+        <div class="card-wrapper">
+            <div class="style-heading">Flip Card</div>
+            <div class="card flip">
+                <div class="flip-inner">
+
+                    <!-- FRONT -->
+                    <div class="flip-front">
+                        <div class="card-name"></div>
+                        <div class="card-title"></div>
+                    </div>
+
+                    <!-- BACK -->
+                    <div class="flip-back">
+                        <div class="card-github"></div>
+                        <div class="card-email"></div>
+                        <img class="qr-img" src="QR.jpeg" alt="QR">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>

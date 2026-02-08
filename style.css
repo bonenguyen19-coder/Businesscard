@@ -1,0 +1,482 @@
+        body {
+            background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        }
+
+        section {
+            text-align: center;
+            margin-bottom: 20px;
+            font: 20px Times New Roman;
+            font-weight: bold;
+            color: white;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        section.input:focus {
+            border: 3px solid yellow;
+        }
+
+        /* .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 100px;
+            width: 170px;
+            margin: 20px;
+            text-align: center;
+            align-items: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);;
+        }
+        .card:nth-child(1) {
+            background-color: white;
+        }
+        .card:nth-child(2) {
+            background-color: #ccffcc;
+            background: linear-gradient(to left,blue , purple);
+        }
+        .card:nth-child(3) {
+            background-color: black;
+        }
+        .card:nth-child(4) {
+            background-color: #ffffcc;
+        }
+        .card:nth-child(5) {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .card:nth-child(6) {
+            background-color: white;
+        } */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .card-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .style-heading {
+            text-align: center;
+            margin-bottom: 12px;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            letter-spacing: 0.5px;
+        }
+
+        .card {
+            /* background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 100px;
+            width: 160px;
+            margin: 20px;
+            text-align: center;
+            align-items: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);; */
+
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            width: 320px;
+            height: 180px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* CARD 1 */
+        .classic {
+            display: flex;
+            background: white;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .classic .left {
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .classic .divider {
+            width: 2px;
+            background: #ddd;
+            align-self: stretch;
+        }
+
+        .classic .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .classic .right .card-name {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .classic .right .card-title {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .classic .right .card-phone::before {
+            content: "✆: ";
+        }
+
+        .classic .right .card-phone {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .classic .right .card-email::before {
+            content: "✉️: ";
+        }
+
+        .classic .right .card-email {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .classic .right .card-website::before {
+            content: "🌐: ";
+        }
+
+        .classic .right .card-website {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .classic img {
+            width: 50px;
+            height: auto;
+        }
+
+        .classic .line {
+            border-top: 1px solid #ccc;
+        }
+
+        /* CARD 2 */
+        .gradient {
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to left, blue, purple);
+            align-items: flex-start;
+            gap: 5px;
+            padding-top: 25px;
+        }
+
+        .gradient .top {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .gradient .portrait {
+            width: 82px;
+            height: 82px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+            /* margin-right: 10px;
+            margin-top:1px;  */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            /* thêm bóng */
+            border: 3px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .gradient .portrait img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gradient .info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            align-self: flex-start;
+            padding-top: 22px;
+        }
+
+        .gradient .info .card-name {
+            Font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .gradient .info .card-title {
+            font-size: 14px;
+            color: white;
+        }
+
+        .gradient .info .divider {
+            display: flex;
+            border-top: 1px solid #ccc;
+            margin-top: 10px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.7);
+            width: calc(100% + 92px);
+            /* 82 avatar + gap */
+            /* margin-left: -92px; */
+        }
+
+        .gradient .bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 15px;
+            gap: 15px;
+            margin-left: 20px;
+        }
+
+        .gradient .bottom .card-phone {
+            font-size: 15px;
+            font-family: Sans 'Times New Roman', Times, serif;
+            justify-content: center;
+            color: white;
+        }
+
+        .gradient .bottom .card-phone::before {
+            content: "✆: + ";
+        }
+
+        .gradient .bottom .card-email {
+            justify-self: center;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+        .gradient .bottom .card-email::before {
+            content: "✉️: "
+        }
+
+        /* CARD 3 */
+        .dev {
+            display: flex;
+            flex-direction: column;
+            background: #0b0f0d;
+            /* color: #00ff9c; */
+            padding: 20px;
+            gap: 5px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .dev .card-name,
+        .dev .card-github,
+        .dev .card-email,
+        .dev a {
+            color: #00ff9c;
+            transition: text-shadow 0.25s ease;
+        }
+
+        .dev .card-name:hover,
+        .dev .card-github:hover,
+        .dev .card-email:hover,
+        .dev a:hover {
+            text-shadow:
+                0 0 4px rgba(0, 255, 156, 0.9),
+                0 0 10px rgba(0, 255, 156, 0.8),
+                0 0 20px rgba(0, 255, 156, 0.6),
+                0 0 40px rgba(0, 255, 156, 0.4);
+        }
+
+        .dev .card-title {
+            color: lightgrey;
+            transition: text-shadow 0.25s ease;
+        }
+
+        .dev p {
+            color: lightgrey;
+            transition: text-shadow 0.25s ease;
+        }
+
+        .card-github {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+        }
+
+        .card-github .prompt {
+            color: #888;
+        }
+
+        .card-github .github-text {
+            color: #00ffae;
+            border-bottom: 1px solid #00ffae;
+            line-height: 1;
+        }
+
+        .card-github::before {
+            content: "> ";
+            color: #888;
+        }
+
+        .dev .card-email::before {
+            content: "> ";
+            color: #888;
+        }
+
+        .dev p::before {
+            content: "> ";
+            color: #888;
+        }
+
+        .dev .divider {
+            display: flex;
+            border-top: 1px solid #ccc;
+            margin-top: 10px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .card.dev p {
+            margin-bottom: 3px;
+        }
+
+        .card.dev .card-github,
+        .card.dev .card-email {
+            margin-top: 2px;
+            display: block;
+        }
+
+        /* CARD 4 */
+        /* ===== CARD 4 – FLIP ===== */
+        .card.flip {
+            width: 320px;
+            height: 200px;
+            perspective: 1000px;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .flip-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.8s ease;
+        }
+
+        .card.flip:hover .flip-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* FRONT & BACK */
+        .flip-front,
+        .flip-back {
+            position: absolute;
+            inset: 0;
+            background: #ffffff;
+            /* white background */
+            border-radius: 16px;
+            padding: 24px;
+            box-sizing: border-box;
+            backface-visibility: hidden;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* FRONT */
+        .flip-front .card-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .flip-front .card-title {
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        /* BACK */
+        .flip-back {
+            transform: rotateY(180deg);
+            justify-content: space-between;
+        }
+
+        .flip-back .card-github::before,
+        .flip-back .card-email::before {
+            content: "> ";
+            color: #888;
+        }
+
+
+        /* Fake QR */
+        .qr-fake {
+            width: 90px;
+            height: 90px;
+            align-self: center;
+            border: 2px solid #111;
+            position: relative;
+        }
+
+        .qr-fake::before,
+        .qr-fake::after {
+            content: "";
+            position: absolute;
+            background: #111;
+        }
+
+        .qr-fake::before {
+            width: 60%;
+            height: 4px;
+            top: 20px;
+            left: 15px;
+        }
+
+        .qr-fake::after {
+            width: 4px;
+            height: 60%;
+            top: 15px;
+            left: 20px;
+        }
+
+        .qr-img {
+            width: 110px;
+            height: 110px;
+            align-self: center;
+            margin-top: 12px;
+
+            background: white;
+            padding: 8px;
+            border-radius: 12px;
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
